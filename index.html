@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#b71959">
+<title>Bito ❤️ Kuntala | My Parvati</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Georgia,serif;
+  background:linear-gradient(135deg,#ffe0ec,#fff0f5,#ffd0e1);
+  color:#8d1749;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+.hero{
+  min-height:90vh;
+  padding:65px 18px 45px;
+  background:linear-gradient(145deg,#ed3980,#a50f50,#690d40);
+  color:white;
+  border-radius:0 0 45px 45px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero h1{
+  font-size:clamp(34px,8vw,48px);
+  margin:20px 0;
+}
+
+.hero p{line-height:1.8}
+
+.bigheart{
+  font-size:65px;
+  animation:beat 1.2s infinite;
+}
+
+@keyframes beat{
+  50%{transform:scale(1.22)}
+}
+
+button{
+  border:0;
+  border-radius:40px;
+  padding:16px 28px;
+  background:linear-gradient(135deg,#ff7eaa,#ed1e70);
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:18px 0;
+  box-shadow:0 6px 20px #570b354d;
+}
+
+button:active{transform:scale(.96)}
+
+section{
+  padding:48px 18px;
+  max-width:850px;
+  margin:auto;
+}
+
+h2{
+  font-size:28px;
+  margin-bottom:25px;
+  color:#bd245b;
+}
+
+.card{
+  background:white;
+  padding:28px 20px;
+  border-radius:25px;
+  line-height:2;
+  box-shadow:0 8px 25px #c94c8240;
+}
+
+.date{
+  font-size:25px;
+  font-weight:bold;
+  color:#dc286b;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+
+.photo{
+  background:white;
+  padding:7px;
+  border-radius:18px;
+  box-shadow:0 5px 18px #a9275b33;
+}
+
+.photo img{
+  display:block;
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:13px;
+}
+
+.photo p{
+  padding:10px 2px;
+  font-size:14px;
+}
+
+.special{
+  background:linear-gradient(145deg,#a30c4e,#ef4b88);
+  color:white;
+  padding:40px 22px;
+  border-radius:30px;
+  box-shadow:0 10px 30px #a51a5555;
+}
+
+.special h2{color:white}
+
+.parvati{
+  font-size:42px;
+  font-weight:bold;
+  margin:20px 0;
+  text-shadow:0 4px 15px #ffb4d1;
+}
+
+.songbox{
+  background:white;
+  border-radius:25px;
+  padding:25px 15px;
+  box-shadow:0 8px 25px #c94c8240;
+}
+
+#player{
+  display:none;
+  margin-top:15px;
+}
+
+iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+  border-radius:15px;
+}
+
+.loveletter{
+  background:white;
+  border-radius:25px;
+  padding:28px 20px;
+  line-height:2;
+  box-shadow:0 8px 25px #c94c8240;
+}
+
+.heart{
+  position:fixed;
+  bottom:-30px;
+  z-index:5;
+  pointer-events:none;
+  animation:float 7s linear forwards;
+}
+
+@keyframes float{
+  to{
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+footer{
+  background:#9d174d;
+  color:white;
+  padding:35px 15px;
+  border-radius:35px 35px 0 0;
+}
+
+@media(max-width:380px){
+  .photo img{height:190px}
+  h2{font-size:24px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<header class="hero">
+
+  <div class="bigheart">❤️</div>
+
+  <h1>Bito ❤️ Kuntala</h1>
+
+  <p>Welcome To Our Little Love Story</p>
+  <p>Two Hearts, One Beautiful Beginning</p>
+
+  <button onclick="startLove()">
+    ❤️ Start Our Love Story
+  </button>
+
+  <p>Made specially for my Parvati 🫀</p>
+
+</header>
+
+<!-- BEGINNING -->
+<section>
+  <h2>💗 Our Beginning</h2>
+
+  <div class="card">
+    <p>Every beautiful story has a beginning...</p>
+    <br>
+
+    <div class="date">29 October 2026</div>
+
+    <br>
+    <p>The day Bito and Kuntala started
+    their beautiful journey together.</p>
+
+    <p>Our story is just beginning. ❤️</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <h2>📸 Our Beautiful Memories</h2>
+
+  <div class="gallery">
+
+    <div class="photo">
+      <img
+      src="https://i.ibb.co/3ycfhSkt/IMG-20261031-WA0013.jpg"
+      alt="Kuntala">
+      <p>🌸 My Kuntala</p>
+    </div>
+
+    <div class="photo">
+      <img
+      src="https://i.ibb.co/4zk9VS3/file-00000000291c8208ab87964e12983e6e.png"
+      alt="Bito and Kuntala">
+      <p>❤️ Together</p>
+    </div>
+
+    <div class="photo">
+      <img
+      src="https://i.ibb.co/jZ1RmhcX/file-00000000fbc082119c4a145e323316d0.png"
+      alt="Our memory">
+      <p>🥰 Beautiful Moments</p>
+    </div>
+
+    <div class="photo">
+      <img
+      src="https://i.ibb.co/prLC1Gkt/file-0000000063f48208a6b17473a31c1cbd.png"
+      alt="Our together photo">
+      <p>💞 Our World</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SONG -->
+<section>
+  <h2>🎵 Our Special Song</h2>
+
+  <div class="songbox">
+
+    <div style="font-size:45px">🎧❤️</div>
+
+    <h3>Akhiyaan</h3>
+    <p>One Song, Countless Feelings</p>
+
+    <button onclick="startLove()">
+      ▶ Play Our Song ❤️
+    </button>
+
+    <div id="player">
+      <iframe
+        id="youtube"
+        title="Our Special Song"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p style="font-size:13px;margin-top:12px">
+      Bito ❤️ Kuntala
+    </p>
+
+  </div>
+</section>
+
+<!-- SPECIAL PARVATI -->
+<section>
+  <div class="special">
+
+    <h2>🫀 My Special Person</h2>
+
+    <div class="parvati">Parvati 🫀</div>
+
+    <h3>My Kuntala ❤️</h3>
+
+    <br>
+
+    <p>
+      You are not just a name in my story.
+      You are my favourite part of it.
+    </p>
+
+    <br>
+
+    <p>
+      Bito's little world has a special place
+      for his Parvati. 🥹
+    </p>
+
+    <br>
+
+    <p>Always keep smiling, Kuntala. 💗</p>
+
+  </div>
+</section>
+
+<!-- LOVE LETTER -->
+<section>
+  <h2>💌 A Letter For You</h2>
+
+  <div class="loveletter">
+
+    <h3>Dear Kuntala, My Parvati ❤️</h3>
+
+    <br>
+
+    <p>
+      I don't know how our story will be written
+      in the future, but I am happy that you
+      are a part of my present.
+    </p>
+
+    <br>
+
+    <p>
+      Thank you for being a beautiful part
+      of my life.
+    </p>
+
+    <br>
+
+    <p>
+      Let's create more beautiful memories,
+      laugh together and enjoy our little journey.
+    </p>
+
+    <br>
+
+    <h3>With Love,</h3>
+    <h2>Bito ❤️</h2>
+
+  </div>
+</section>
+
+<!-- ENDING -->
+<section>
+  <div class="bigheart">💗</div>
+
+  <h2>Bito & Kuntala</h2>
+
+  <p>My Kuntala, My Parvati 🫀</p>
+
+  <p>29 October 2026</p>
+
+  <br>
+
+  <h3>Our Little Beginning ❤️</h3>
+</section>
+
+<footer>
+  <h3>Made With Love ❤️</h3>
+  <p>Bito 🫀 Parvati (Kuntala)</p>
+  <p>29.10.2026</p>
+</footer>
+
+<script>
+let started = false;
+
+function startLove(){
+
+  const player = document.getElementById("player");
+  const youtube = document.getElementById("youtube");
+
+  player.style.display = "block";
+
+  if(!started){
+
+    youtube.src =
+    "https://www.youtube.com/embed/kq19ZFnmze8?autoplay=1&playsinline=1&controls=1&rel=0";
+
+    started = true;
+  }
+
+  player.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  });
+
+  if(!window.heartsStarted){
+    window.heartsStarted = true;
+
+    setInterval(function(){
+
+      const heart = document.createElement("div");
+
+      heart.className = "heart";
+      heart.innerHTML = ["❤️","💕","💗","🫀","💖"][
+        Math.floor(Math.random()*5)
+      ];
+
+      heart.style.left = Math.random()*100+"vw";
+      heart.style.fontSize =
+        (18+Math.random()*20)+"px";
+
+      document.body.appendChild(heart);
+
+      setTimeout(function(){
+        heart.remove();
+      },7000);
+
+    },650);
+  }
+}
+</script>
+
+</body>
+</html>
